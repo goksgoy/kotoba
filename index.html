@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p{
+            font-family: sans-serif;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM KOTOBA</title>
+</head>
+<body>
 
+    <script>
+        function gentext() {
+            var word=['説明','書く','筆者','入学式','世界','昔','友達','赤い','抱く','泣く','続ける','寝る','建物','辞める','試験','混む','間違い','洗濯',
+                '鳥','鳴く','彼','砂','星','住む','春','暖かい','洋服','着る','小学校','料理','油','冬','逃げる','黒い','無理','育つ','手帳','困る','貯金',
+                '目的','最近','窓','健康','野菜','留守','製品','以内','直す','皆様','存知','内容','変わる','授業料','値上がり','吸う','合格','望む','病気','治す','罹る',
+                '場合','連絡','次','修正','発売','雪','転ぶ','注意','意向形','会社','吠える','','','','','','','','','',
+                '','','','','','','','','','','','','','','','','','','','',
+                '','','','','','','','','','','','','','','','','','','','',
+            ];
+            var para=document.querySelector('p');
+            para.innerHTML=word[Math.floor(Math.random()*word.length)];
+        }
+    </script>
+
+    <p></p>
+    <button onclick="gentext();">KLIK</button>
+</body>
+</html>
